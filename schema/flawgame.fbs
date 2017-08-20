@@ -1,0 +1,105 @@
+//Flatbuffer 
+//File: flawgame.fbs
+namespace  flaw;
+
+struct PrevSpeed {
+ x: float;
+ y: float;
+}// end of Prespeed
+
+struct Aiprior {
+x: float;
+y: float;
+}// end of Aiprior
+
+struct Control  {
+ x: int;
+ y: int;
+ fire: bool;
+}// end of Control
+
+struct Speed {
+ x: float;
+ y: float;
+}// end of Speed
+
+
+enum Color :byte { BLUE = 0, RED, PURPLE, BLACK, GREEN, BURN, GHOST, ORANGE  }
+
+table Wizard{
+color: Color;
+shield: bool;
+points: int;
+x: int;
+y: int;
+w: int;
+h: int;
+aidelay: int;
+reaction: int;
+gfxset: int ;
+follows: int;
+skid: bool;
+yoffset: float;
+speed: Speed;
+prevspeed: PrevSpeed;
+aiprior: Aiprior;
+control:  Control;
+strategic_state: double;
+joystick: bool;
+ai: bool;
+keyboard: int;
+direction: int;
+frame: int;
+extra: int;
+status: int;
+idletime: int;
+timer: int;
+}  // end of Wizard Table
+
+//collectable gems
+   struct Extra {
+   x: int;
+   y: int;
+   enabled: bool;
+   newgem: bool;
+   on: bool;
+   blitted: bool;
+   // SDL_Rect rec ?
+   }  // end of Extra
+
+ //holes 5
+ struct Holes {
+  x: float;
+  y: float;
+  radius: float;
+    } // End of Holes
+
+
+table Game {
+wizard0: Wizard;  
+wizard1: Wizard;  
+wizard2: Wizard;  
+wizard3: Wizard;  
+wizard4: Wizard;  
+
+stop:  bool;
+finished: bool;
+quit: bool;
+playmusic: bool;
+playsounds: bool;
+gems: bool;
+hq: bool;
+fixedarena: bool;
+tactical: bool;
+angle: int;
+control: Control;
+extra: Extra;
+lang: string;
+hole1: Holes; 
+hole2: Holes; 
+hole3: Holes; 
+hole4: Holes; 
+hole5: Holes; 
+} // end of Game message
+
+root_type Game;
