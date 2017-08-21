@@ -24,14 +24,21 @@ Windows:
 ## Development setup
  In order to simplify things a bit, a small modification to the ()/commandergenius/project/java/Video.java file was made to append the two letter language code to the command line passed into the main function, it just easier. If no other arguments are set in the AndroidAppSettings.cfg then this argument is at position 2, ie argv[2] = "en". Included in this repository is a copy of Video.java you can just copy it in your sdl-1.2 java directory.
 
-## Release History
 
+
+## Release History
+* 0.0.3
+    * Changed App to use original .po language files translations.
 * 0.0.2
     * Work in progress
 
 ## Meta
 
-David Evans – [@David_Lee_Evans](https://twitter.com/) – david@davidevans.us
+FLAW Google Market download – [F.L.A.W. APP](https://play.google.com/store/apps/details?id=us.davidevans.games.flaw.paid)
+
+===
+David Evans Twitter – [@David_Lee_Evans](https://twitter.com/)
+David Evans Email  –  [Email]david@davidevans.us
 
 Distributed under the GPL Version 3 license. See ``LICENSE`` for more information.
 
