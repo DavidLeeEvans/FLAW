@@ -27,6 +27,8 @@ Windows:
 
 
 ## Release History
+* 0.0.4 Additional ua language added.
+
 * 0.0.3
     * Changed App to use original .po language files translations.
 * 0.0.2
@@ -35,7 +37,7 @@ Windows:
 ## Meta
 
 FLAW Google Market download – [F.L.A.W. APP](https://play.google.com/store/apps/details?id=us.davidevans.games.flaw.paid)
-
+App Market https://play.google.com/store/apps/details?id=us.davidevans.games.flaw.paid
 ===
 David Evans Twitter – [@David_Lee_Evans](https://twitter.com/)
 David Evans Email  –  [Email]david@davidevans.us
